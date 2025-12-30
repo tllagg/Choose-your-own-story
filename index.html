@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Choose Your Own Adventure</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                  font-family: Arial, sans-serif;
+                        padding: 20px;
+                              max-width: 600px;
+                                    margin: auto;
+                                        }
+                                            textarea, button {
+                                                  width: 100%;
+                                                        margin-top: 10px;
+                                                              padding: 10px;
+                                                                    font-size: 16px;
+                                                                        }
+                                                                            #story {
+                                                                                  margin-top: 20px;
+                                                                                        white-space: pre-wrap;
+                                                                                            }
+                                                                                              </style>
+                                                                                              </head>
+                                                                                              <body>
+
+                                                                                                <h2>Choose Your Own Adventure</h2>
+
+                                                                                                  <textarea id="prompt" rows="4" placeholder="Describe your story idea..."></textarea>
+                                                                                                    <button onclick="startStory()">Start Story</button>
+
+                                                                                                      <div id="story"></div>
+
+                                                                                                        <script>
+                                                                                                            function startStory() {
+                                                                                                                  const prompt = document.getElementById("prompt").value;
+                                                                                                                        document.getElementById("story").innerText =
+                                                                                                                                "Story will appear here.\n\nPrompt was:\n" + prompt;
+                                                                                                                                    }
+                                                                                                                                      </script>
+
+                                                                                                                                      </body>
+                                                                                                                                      </html>
